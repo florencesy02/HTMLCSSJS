@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>
+        <h1>온라인 서점 회원가입 페이지</h1>
+        <form action="#">
+            <fieldset>
+                <legend>회원 기본 정보</legend>
+                <p>
+                    <label for="userid">아이디 : </label>
+                    <input type="text" id="userid" placeholder="아이디 입력">
+                </p>
+                <p>
+                    <label for="passwd">비밀번호 : </label>
+                    <input type="password" id="passwd">
+                </p>
+                <p>
+                    <label for="username">이름 : </label>
+                    <input type="text" id="username">
+                </p>
+                <p>
+                    <label for="major">학과</label>
+                    <select name="major" id="major">
+                    <option value="인공지능소프트웨어과">인공지능소프트웨어과</option> default
+                    <option value="AI융합과">AI융합과</option>
+                    <option value="IoT소프트웨어과">IoT소프트웨어과</option>
+</select>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>연락처</legend>
+                <p>
+                    <label for="email">이메일 : </label>
+                    <input type="text" id="email" placeholder="email@gmail.com">
+                </p>
+                <p>
+                    <label for="phonenumber">휴대전화 : </label>
+                    <input type="number" id="phonenumber" placeholder="010-****-****">
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>추가 정보</legend>
+                <p>
+                    <td>생년월일 : </td>
+                    <label for="date">
+                        <input type="date" id="date" max="2015-12-31" min="1930-01-01">
+                    </label>
+                </p>
+                <p>
+                    <td>성별 : </td>
+                    <td>
+                        <input id="man" type="radio" name="gender" value="m" <label for="man">남자
+    </label>
+    <input id="woman" type="radio" name="gender" value="w" <label for="woman">여자</label>
+    <input id="none" type="radio" name="gender" value="n" <label for="none">선택하지 않음</label>
+    </td>
+    </p>
+    <p>
+        <tr>
+            <td>관심사 : </td>
+            <td>
+                <input id="Java" type="checkbox" name="interest" value="Java" <label for="Java">Java</label>
+                <input id="HTML" type="checkbox" name="interest" value="HTML" <label for="HTML">HTML</label>
+                <input id="CSS" type="checkbox" name="interest" value="CSS" <label for="CSS">CSS</label>
+                <input id="Javascript" type="checkbox" name="interest" value="Javascript" <label
+                    for="Javascript">Javascript</label>
+                <input id="Algorithm" type="checkbox" name="interest" value="Algorithm" <label
+                    for="Algorithm">Algorithm</label>
+            </td>
+    </p>
+    <p>
+        <td>본인 사진 : </td>
+        <input type="file" name="file" value="file"><br>
+    </p>
+    </fieldset>
+    <br>
+    <input type="submit" value="초기화">&nbsp<input type="submit" value="회원가입">
+    </form>
+    </label>
+</body>
+
+</html>
